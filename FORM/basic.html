@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basic.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Personal details</h2>
+        <form>
+            <div class="form-group">
+                <label>Name</label>
+                <input type ="text" name="name"><br>
+            </div>
+            <div class="form-group">
+                <label>E Mail-Id</label>
+                <input type="email" name="email" placeholder="abc@gmail.com"><br>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password"><br>
+            </div>
+            <div class="form-group">
+                <label>Gender</label><br>
+                <input type="radio" name="Gender" value="Male">Male<br>
+                <input type="radio" name="Gender" value="Female">Female<br>
+                <input type="radio" name="Gender" value="Others">Others<br>
+            </div>
+            <div class="form-group">
+                <label>Contact Us</label>
+                <input type="text" value="91 ">
+            </div>
+            <div class="form-group">
+                <p>Education Qualifications</p>
+                <label>Degree</label>
+                <select id="Degree" name="Degree">
+                    <option value="group">--Select any one group--</option>
+                    <option value="Bachelor of Arts (BA)">Bachelor of Arts (BA)</option>
+                    <option value="Bachelor of Science (BS)">Bachelor of Science (BS)</option>
+                    <option value="Bachelor of Fine Arts (BFA)">Bachelor of Fine Arts (BFA)</option>
+                    <option value="Bachelor of Business Administration (BBA)">Bachelor of Business Administration (BBA)</option>
+                </select><br>
+            </div class="form-group">
+            <div>
+                <label>Engineering</label>
+                <select id="Engineering" name="Engineering">
+                    <option value="group">--Select any one group--</option>
+                    <option value="cse">CSE</option>
+                    <option value="cse-aiml">CSE AIML</option>
+                    <option value="Mech">MECH</option>
+                    <option value="ECE&EEE">ECE&EEE</option>
+                </select><br>
+            </div class="form-group">
+            <div>
+                <label>Address</label><br>
+                <textarea name="address" rows="10" cols="30"></textarea><br>
+            </div>
+            <button type="button" onclick="alert('your details will be submitted once you click on it.')" >Submit</button>
+        </form>
+    </div>
+</body>
+</html>

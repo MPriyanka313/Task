@@ -1,0 +1,58 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+}
+table{
+    font-family: sans-serif;
+    border-collapse: collapse;
+}
+th{
+    background-color: grey;
+    color:white;
+
+}
+th,td{
+    padding: .8rem;
+    font-size: 1.4rem;
+}
+tbody{
+    background-color:#eee;
+    color: #555;
+}
+
+@media screen and (max-width : 600px){
+    th{
+        display: none;
+    }
+    td{
+        display: block;
+    }
+    td:first-child{
+        background-color: #333;
+        color:#eee;
+        text-align: center;
+    }
+    td:nth-child(2)::before{
+        content: "Company";
+    }
+    td:nth-child(3)::before{
+        content: "Age";
+    }
+    td:nth-child(4)::before{
+        content: "Designation";
+    }
+    td:nth-child(5)::before{
+        content: "Hobbies";
+    }
+    td{
+        text-align: right;
+    }
+    td::before{
+        float: left;
+        margin-right: 3rem;
+        font-weight: bold;
+    }
+}
